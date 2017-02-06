@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"    content="width=device-width, initial-scale=1">
+  <meta name="description" content="Website">
+  <meta name="author"      content="Hudson Nicoletti">
+  <title>Hudson Nicoletti</title>
+
+  <?php echo $this->assets->outputCss(); ?>
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <div class="logo-img"></div>
+        <h4>Old Player's <span>NEWS</span></h4>
+      </div>
+      <nav>
+        <ul>
+          <li class="green">
+            <a href="#">game</a>
+            <ol>
+              <li><a href="#">Notícias</a></li>
+              <li><a href="#">Detonados</a></li>
+              <li><a href="#">Conferidos</a></li>
+            </ol>
+          </li>
+          <li class="pink"><a href="">filme</a></li>
+          <li class="yellow"><a href="">série</a></li>
+          <li class="blue"><a href="">variedade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="main-content">
+        <?php echo $this->getContent();?>
+      </section>
+      <aside class="side-content">
+
+        <div class="block who z-depth-1">
+          <h3>Quem Somos:</h3>
+          <div class="user">
+            <figure>
+              <img src="assets/public/images/leandro.png" alt="Leandro">
+              <h4>Leandro</h4>
+            </figure>
+            <div class="tag">
+              <div class="icons">
+                <i class="xbox"></i>
+                <i class="ps4"></i>
+              </div>
+              <span>OnofreKiller84</span>
+            </div>
+          </div>
+          <div class="user">
+            <figure>
+              <img src="assets/public/images/haroldo.png" alt="Leandro">
+              <h4>Haroldo</h4>
+            </figure>
+            <div class="tag">
+              <div class="icons">
+                <i class="xbox"></i>
+              </div>
+              <span>zAngeluZ13</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block social z-depth-1">
+          <h3>Siga-me os bons!</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="icon youtube"></i>
+                <span>1.100 inscritos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon facebook"></i>
+                <span>1.300 fans</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon twitter"></i>
+                <span>200 seguidores</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon instagram"></i>
+                <span>100 seguidores</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon gplus"></i>
+                <span>30 seguidores</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="block popular z-depth-1">
+          <h3>Populares:</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="https://placeimg.com/80/80/tech" alt="">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="https://placeimg.com/70/70/tech" alt="">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="https://placeimg.com/90/90/tech" alt="">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="block hot z-depth-1">
+          <h3>O que sai?</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="https://placeimg.com/80/80/tech" alt="">
+                <span>Lorem ipsum dolor amet. <small>19-01</small></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="https://placeimg.com/70/70/tech" alt="">
+                <span>Lorem ipsum dolor amet. <small>19-01</small></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="https://placeimg.com/90/90/tech" alt="">
+                <span>Lorem ipsum dolor amet. <small>19-01</small></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </aside>
+    </div>
+  </main>
+
+  <a href="#" class="back-to-top"></a>
+
+  <footer>
+    <div class="container">
+
+      <div class="logo">
+        <div class="logo-img"></div>
+        <h4>Old Player's <span>NEWS</span></h4>
+      </div>
+
+      <div class="social">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="icon youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon gplus"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <?php echo $this->assets->outputJs(); ?>
+</body>
+</html>
